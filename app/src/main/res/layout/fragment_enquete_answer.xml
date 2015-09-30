@@ -1,0 +1,45 @@
+<LinearLayout
+	android:id="@+id/foo1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.example.kobayashi_ma.enquete.EnqueteAnswerFragment">
+
+	<TextView
+		android:id="@+id/enquete_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top"
+		android:gravity="center"
+		android:text="アンケート名"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/first_choice"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:background="#a8ff0000"
+			android:text="赤"/>
+
+		<Button
+			android:id="@+id/second_choice"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:background="#a80000ff"
+			android:text="青"/>
+
+	</LinearLayout>
+
+</LinearLayout>
