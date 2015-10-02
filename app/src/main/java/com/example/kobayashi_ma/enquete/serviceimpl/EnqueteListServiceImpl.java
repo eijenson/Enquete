@@ -10,14 +10,4 @@ public class EnqueteListServiceImpl implements EnqueteListService {
 	public void init() {
 
 	}
-
-	@Override
-	public void moveAnswer(Long id) {
-
-	}
-
-	@Override
-	public void moveTotal(Long id) {
-
-	}
 }

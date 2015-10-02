@@ -25,10 +25,10 @@ public class Enquete {
 
 	public Enquete() {
 		id = java.util.Calendar.getInstance().getTimeInMillis();
-		name = "test";
+		name = "旅行に行きたい場所は？";
 		choiceList = new ArrayList<>();
-		choiceList.add(new Choice());
-		choiceList.add(new Choice());
+		choiceList.add(new Choice("北海道"));
+		choiceList.add(new Choice("沖縄"));
 	}
 
 	public long getId() {

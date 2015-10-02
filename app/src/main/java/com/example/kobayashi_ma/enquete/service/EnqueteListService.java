@@ -8,14 +8,4 @@ public interface EnqueteListService {
 	 * 初期化
 	 */
 	void init();
-
-	/**
-	 * 回答画面へ遷移
-	 */
-	void moveAnswer(Long id);
-
-	/**
-	 * 集計画面へ遷移
-	 */
-	void moveTotal(Long id);
 }

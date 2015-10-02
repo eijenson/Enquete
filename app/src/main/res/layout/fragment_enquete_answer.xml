@@ -22,23 +22,56 @@
 		android:layout_gravity="center_vertical"
 		android:orientation="horizontal">
 
-		<Button
-			android:id="@+id/first_choice"
-			android:layout_width="0dip"
+		<LinearLayout
+			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:layout_gravity="center_vertical"
 			android:layout_weight="1"
-			android:background="#a8ff0000"
-			android:text="赤"/>
+			android:orientation="vertical">
 
-		<Button
-			android:id="@+id/second_choice"
-			android:layout_width="0dip"
+			<TextView
+				android:id="@+id/first_choice_name"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:background="#a8ff0000"
+				android:text="New Text"/>
+
+			<LinearLayout
+				android:id="@+id/first_choice_button"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="5"
+				android:background="@drawable/first_choice_border"
+				android:orientation="horizontal"
+				android:text=""/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:layout_gravity="center_vertical"
 			android:layout_weight="1"
-			android:background="#a80000ff"
-			android:text="青"/>
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/second_choice_name"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:background="#a80000ff"
+				android:text="New Text"/>
+
+			<Button
+				android:id="@+id/second_choice_button"
+				android:layout_width="match_parent"
+				android:layout_height="0dip"
+				android:layout_gravity="center_vertical"
+				android:layout_weight="5"
+				android:background="@drawable/second_choice_border"
+				android:text=""/>
+		</LinearLayout>
 
 	</LinearLayout>
 
