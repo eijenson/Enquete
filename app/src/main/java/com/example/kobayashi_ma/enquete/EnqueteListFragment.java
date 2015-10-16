@@ -77,5 +77,7 @@ public class EnqueteListFragment extends Fragment {
 		void moveAnswerFragment(Long enqueteId);
 
 		void moveTotalFragment(Long enqueteId);
+
+		void moveCreateFragment();
 	}
 }

@@ -37,7 +37,7 @@
 				android:background="#a8ff0000"
 				android:text="New Text"/>
 
-			<LinearLayout
+			<RelativeLayout
 				android:id="@+id/first_choice_button"
 				android:layout_width="match_parent"
 				android:layout_height="0dp"
@@ -45,6 +45,8 @@
 				android:layout_weight="5"
 				android:background="@drawable/first_choice_border"
 				android:orientation="horizontal"
+				android:paddingLeft="10dp"
+				android:paddingTop="10dp"
 				android:text=""/>
 		</LinearLayout>
 

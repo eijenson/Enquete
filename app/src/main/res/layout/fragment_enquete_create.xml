@@ -1,10 +1,70 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.kobayashi_ma.enquete.EnqueteCreateFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical"
+			  android:weightSum="1"
+			  tools:context="com.example.kobayashi_ma.enquete.EnqueteCreateFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="質問"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-</FrameLayout>
+	<EditText
+		android:id="@+id/new_enquete_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="text"/>
+
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.10"/>
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="選択肢1"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<EditText
+		android:id="@+id/choice_title1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="text"/>
+
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.10"/>
+
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="選択肢2"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<EditText
+		android:id="@+id/choice_title2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="text"/>
+
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_weight="0.10"/>
+
+	<Button
+		android:id="@+id/create_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Create"/>
+
+</LinearLayout>

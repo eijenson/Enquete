@@ -19,16 +19,25 @@ public class Enquete {
 	public static Enquete testInstance() {
 		if (testEnquete == null) {
 			testEnquete = new Enquete();
+			testEnquete.name = "旅行に行きたい場所は？";
+			testEnquete.choiceList = new ArrayList<>();
+			testEnquete.choiceList.add(new Choice("北海道"));
+			testEnquete.choiceList.add(new Choice("沖縄"));
 		}
 		return testEnquete;
 	}
 
 	public Enquete() {
 		id = java.util.Calendar.getInstance().getTimeInMillis();
-		name = "旅行に行きたい場所は？";
+	}
+
+	public Enquete(String name, List<String> choiceTitle) {
+		this();
+		this.name = name;
 		choiceList = new ArrayList<>();
-		choiceList.add(new Choice("北海道"));
-		choiceList.add(new Choice("沖縄"));
+		for (String title : choiceTitle) {
+			choiceList.add(new Choice(title));
+		}
 	}
 
 	public long getId() {

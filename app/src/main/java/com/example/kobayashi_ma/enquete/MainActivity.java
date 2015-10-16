@@ -8,7 +8,8 @@ import android.view.MenuItem;
 import com.example.kobayashi_ma.enquete.util.FragmentManagerUtil;
 
 
-public class MainActivity extends AppCompatActivity implements EnqueteListFragment.ListFragmentListener {
+public class MainActivity extends AppCompatActivity implements EnqueteListFragment
+		.ListFragmentListener, EnqueteCreateFragment.CreateFragmentListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,9 @@ public class MainActivity extends AppCompatActivity implements EnqueteListFragme
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-
 		//noinspection SimplifiableIfStatement
-		if (id == R.id.action_settings) {
+		if (id == R.id.action_new_enquete) {
+			moveCreateFragment();
 			return true;
 		}
 
@@ -58,5 +59,16 @@ public class MainActivity extends AppCompatActivity implements EnqueteListFragme
 	@Override
 	public void moveTotalFragment(Long enqueteId) {
 		FragmentManagerUtil.fragmentRepalce(this, EnqueteTotalFragment.newInstance(enqueteId));
+	}
+
+	@Override
+	public void moveCreateFragment() {
+		FragmentManagerUtil.fragmentRepalce(this, EnqueteCreateFragment.newInstance());
+	}
+
+	@Override
+	public void moveListFragment() {
+		//TODO:遷移ごとに新規インスタンスが作成されるのがいいのか？
+		FragmentManagerUtil.fragmentRepalce(this, EnqueteListFragment.newInstance());
 	}
 }

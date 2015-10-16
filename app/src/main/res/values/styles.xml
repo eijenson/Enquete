@@ -1,8 +1,13 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-    </style>
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+	</style>
 
+	<style name="SealButton" parent="android:Widget.Button.Small">
+		<item name="android:layout_marginLeft">2dp</item>
+		<item name="android:layout_marginTop">2dp</item>
+		<item name="android:background">@drawable/first_choice_seal</item>
+	</style>
 </resources>
